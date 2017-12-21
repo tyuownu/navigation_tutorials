@@ -14,6 +14,8 @@ global_costmap:
   static_map: true
   rolling_window: false
   track_unknown_space: true
+  # control the default_value of costmap
+  # true: NO_INFORMATION, false: FREE_SPACE(default)
   always_send_full_costmap: true
 
   footprint_padding: 0.02
