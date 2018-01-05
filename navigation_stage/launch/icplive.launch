@@ -1,0 +1,15 @@
+<launch>
+  <master auto="start"/>
+  <!--
+  <param name="/use_sim_time" value="true"/>
+  <include file="$(find navigation_stage)/move_base_config/move_base.xml"/>
+  <node pkg="stage_ros" type="stageros" name="stageros" args="$(find nav2d_tutorials)/world/maze.world" respawn="false" >
+    <param name="base_watchdog_timeout" value="0.2"/>
+  </node>
+  -->
+  <!--
+  <include file="$(find navigation_stage)/move_base_config/slam_gmapping.xml"/>  
+  -->
+  <include file="$(find navigation_stage)/launch/icpslam/nav2d_icp.launch" />
+  <include file="$(find navigation_stage)/move_base_config/move_base.xml"/>
+</launch>
