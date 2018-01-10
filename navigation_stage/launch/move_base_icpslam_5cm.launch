@@ -9,5 +9,5 @@
   <include file="$(find navigation_stage)/move_base_config/slam_gmapping.xml"/>  
   -->
   <include file="$(find navigation_stage)/launch/icpslam/nav2d_icp.launch" />
-  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find navigation_stage)/single_robot.rviz" />
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find navigation_stage)/rviz/navigation.rviz" />
 </launch>
