@@ -14,7 +14,7 @@
   -->
   <node name="cartographer_node" pkg="cartographer_ros" type="cartographer_node" args="
     -configuration_directory $(find cartographer_turtlebot)/configuration_files
-    -configuration_basename turtlebot_urg_lidar_2d.lua" output="screen"></node>
+    -configuration_basename turtlebot_rplidar_2d.lua" output="screen"></node>
 
   <node name="rviz" pkg="rviz" type="rviz" required="true" args="-d $(find cartographer_turtlebot)/configuration_files/demo_turtlebot.rviz"></node>
   <!--
