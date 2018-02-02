@@ -5,6 +5,7 @@
   <node name="map_server" pkg="map_server" type="map_server" args="$(find navigation_stage)/stage_config/maps/maze.yaml" respawn="false" />
   <node pkg="stage_ros" type="stageros" name="stageros" args="$(find navigation_stage)/stage_config/worlds/maze.world" respawn="false" >
     <param name="base_watchdog_timeout" value="0.2"/>
+    <remap from="base_scan" to="scan" />
   </node>
   <include file="$(find navigation_stage)/move_base_config/amcl.diff.xml"/>
   <node name="rviz" pkg="rviz" type="rviz" args="-d $(find navigation_stage)/rviz/navigation.rviz" />
