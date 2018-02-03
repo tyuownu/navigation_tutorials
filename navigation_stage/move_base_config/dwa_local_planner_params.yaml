@@ -6,17 +6,17 @@ DWAPlannerROS:
   acc_lim_x: 5
   acc_lim_y: 0
 
-  max_vel_x: 0.25
-  min_vel_x: -0.25
+  max_vel_x: 0.55
+  min_vel_x: -0.55
 
   max_vel_y: 0.0                # diff drive robot
   min_vel_y: -0.0               # diff drive robot
 
-  max_trans_vel: 0.25           # default: 0.55
+  max_trans_vel: 0.55           # default: 0.55
   min_trans_vel: 0.05           # default: 0.1
 
   max_rot_vel: 1.0
-  min_rot_vel: 0.1
+  min_rot_vel: 0.4
 
   # Warning!
   #   do not set min_trans_vel to 0.0 otherwise dwa will always think
@@ -46,9 +46,9 @@ DWAPlannerROS:
   max_scaling_factor: 0.2
   # how much to scale the robot's footprint when at speed
 
-  vx_samples: 10                # 3
+  vx_samples: 20                # 3
   vy_samples: 1                 # diff drive robot
-  vtheta_samples: 40            # 20
+  vtheta_samples: 60            # 20
 
   sim_period: 0.1  # 控制速度和角速度的生成值，模拟范围
 
