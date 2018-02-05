@@ -13,10 +13,10 @@
   <include file="$(find navigation_stage)/launch/icpslam/nav2d_icp.launch" />
   -->
   <node name="cartographer_node" pkg="cartographer_ros" type="cartographer_node" args="
-    -configuration_directory $(find cartographer_turtlebot)/configuration_files
-    -configuration_basename turtlebot_rplidar_2d.lua" output="screen"></node>
+    -configuration_directory $(find cartographer_ros)/configuration_files
+    -configuration_basename turtlebot3_rplidar_realbot_2d.lua" output="screen"></node>
 
-  <node name="rviz" pkg="rviz" type="rviz" required="true" args="-d $(find cartographer_turtlebot)/configuration_files/demo_turtlebot.rviz"></node>
+  <node name="rviz" pkg="rviz" type="rviz" required="true" args="-d $(find navigation_stage)/rviz/navigation.rviz"></node>
   <!--
   <node name="rviz" pkg="rviz" type="rviz" args="-d $(find navigation_stage)/rviz/navigation.rviz" />
   -->
